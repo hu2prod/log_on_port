@@ -6,10 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "log_on_port": "bin/log_on_port"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fy": "github:hu2prod/fy",
+    "iced-coffee-script": "^108.0.11",
     "minimist": "^1.2.0",
     "ws": "^3.0.0"
   }
