@@ -1,7 +1,5 @@
 #!/usr/bin/iced
 ### !pragma coverage-skip-block ###
-require 'fy'
-require 'fy/codegen'
 WebSocket = require 'ws'
 http = require 'http'
 argv = require('minimist')(process.argv.slice(2))
@@ -52,7 +50,7 @@ server = http.createServer (req, res)->
         <title>log_on_port</title>
       </head>
       <body>
-        #{make_tab line_list.join('<br>'), '    '}
+        #{line_list.join('<br>')}
       </body>
     </html>
     """
